@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma;
     background-color: #f6f9fc;
     margin: 0;
     padding: 0;
@@ -8,11 +8,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    cursor: default;
 }
 
 .container {
     background-color: #ffffff;
-    padding: 25px;
+    padding: 30px;
     margin: 50px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -206,6 +207,46 @@ h1, h2 {
     display: none;
 }
 
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+footer p {
+    font-size: 21px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.8s;
+}
+
+.social-icons a {
+    color: #555;
+    margin: 0 8px;
+    transition: 0.8s;
+    font-size: 32px;
+}
+
+.social-icons :hover {
+    color: #007BFF;
+    transform: scale(1.2 );
+    transition: .55s ease;
+}
+
+footer p2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
 @media (max-width: 768px) {
     .finance-input {
         grid-template-columns: 1fr;
@@ -214,5 +255,17 @@ h1, h2 {
     .filter-search {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    footer p2 {
+        font-size: 14px;
     }
 }
